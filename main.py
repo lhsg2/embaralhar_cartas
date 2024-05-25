@@ -12,5 +12,9 @@ for i in range(4):
     cartas.append(str(numeros[u])+" de "+(naipes[i]))
 quantidade = int(input("degite a quantidade de cartas:"))
 random.shuffle(cartas)
-for i in range(quantidade):
- print(cartas[i])
+ 
+if quantidade < 52:
+  for i in range(quantidade):
+    print(cartas[i])
+else:
+  print("limite de possibilidades de cartas excedido")
